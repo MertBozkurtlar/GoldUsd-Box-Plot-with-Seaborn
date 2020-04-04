@@ -14,7 +14,7 @@ WayList = gold['Close'].subtract(gold['Open']) >= 0
 plot = sns.catplot(kind='box', data=gold.T)
 plot.fig.suptitle('GoldUsd Chart')
 plot.set(xlabel='Date', ylabel='Price (USD)')
-plt.xticks(rotation=90)
+plt.xticks(rotation=90, fontsize=7, fontname='times')
 
 # Coloring
 boxes = plot.ax.artists
